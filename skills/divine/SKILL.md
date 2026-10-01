@@ -1,9 +1,9 @@
 ---
 name: divine
 description: >-
-  This skill should be used when the user says "divine", "/divine", "why does
-  this exist", "why does this work this way", "why was this chosen", "what
-  motivated this code", "explain the rationale", "trace this decision",
+  This skill should be used when the user says "divine", "/divine", "why",
+  "/why", "why does this exist", "why does this work this way", "why was this
+  chosen", "what motivated this code", "explain the rationale", "trace this decision",
   "reason about intent", or wants to understand the forces that shaped a
   security-relevant design choice, defensive check, threshold, invariant, trust
   boundary, or regression. Produces a confidence-calibrated, source-backed read
@@ -15,7 +15,8 @@ user_invocable: true
 
 Investigate the motivation and intent behind security-relevant code or design.
 
-`divine` is the Grimoire version of a "why" archaeology skill. It complements:
+`divine` is also invocable as `/why`. It is the Grimoire version of a "why"
+archaeology skill. It complements:
 - `cartography`, which maps where things are.
 - `tome`, which preserves durable source-backed conclusions.
 - `finding`, which reports verified vulnerabilities.
