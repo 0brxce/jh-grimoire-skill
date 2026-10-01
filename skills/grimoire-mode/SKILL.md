@@ -15,7 +15,7 @@ user_invocable: true
 * Never produce a claim that relies on unverified assumptions. 
 * Don't force findings where there are none.
 
-## Principles
+## Tenets
 
 Read the full skill for each principle you apply.
 
@@ -32,4 +32,9 @@ Core
 * scribe - An agent for documenting.
 * sigil - An agent that performs autonomous research.
 
+## Somatics ( workflows )
 
+Workflows are skills that structure how you approach a goal.
+
+* tome - Tomes are an incremental research wiki with extensive evidence provenance. Use it whenever a user asks a question, the tome skill provides a structured method for answering questions.
+* delve - Review autonomous research for interesting odd behavior, near-misses, and promising leads that deserve deeper human-guided investigation.
