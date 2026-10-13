@@ -55,6 +55,7 @@ load**: one answer should be fully absorbed before the next question.
 ## Sources
 
 Read before answering, in this order:
+- A delve board in the current conversation, if `/delve` ran before this
 - `GRIMOIRE.md` if present
 - `grimoire/tomes/` for prior conclusions
 - `grimoire/cartography/` for flows
