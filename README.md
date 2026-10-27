@@ -63,6 +63,17 @@ git clone https://github.com/JoranHonig/grimoire.git
 claude --plugin-dir /path/to/grimoire
 ```
 
+With Nix, the flake's home-manager module installs Grimoire for the coding agents you pick (`claude-code`, [omp](https://github.com/can1357/oh-my-pi)):
+
+```nix
+imports = [ grimoire.homeManagerModules.default ];
+programs.grimoire = { enable = true; targets = [ "claude-code" "omp" ]; };
+```
+
+For Claude Code this registers the `grimoire` marketplace and enables `grimoire@grimoire` through home-manager's `programs.claude-code` (which must be enabled), so don't also pass `--plugin-dir`. Set `programs.claude-code.mutableSettings = true` to keep managing other plugins with `/plugin`. For omp it links skills and agents only; install `omp-hooks-plus` for hooks.
+
+Without Nix, the repo is also a marketplace: `claude plugin marketplace add JoranHonig/grimoire && claude plugin install grimoire@grimoire`.
+
 Skills and agents auto-discover via the plugin manifest. Some features require API keys:
 
 | Service | Key | Purpose |

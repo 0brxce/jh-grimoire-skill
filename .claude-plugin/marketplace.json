@@ -1,0 +1,13 @@
+{
+  "name": "grimoire",
+  "owner": {
+    "name": "Joran Honig"
+  },
+  "plugins": [
+    {
+      "name": "grimoire",
+      "source": "./",
+      "description": "Security research toolkit for discovering and remediating vulnerabilities"
+    }
+  ]
+}
